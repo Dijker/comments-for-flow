@@ -1,0 +1,268 @@
+{
+  "id": "nu.fkey.CommentsForFlow",
+  "version": "1.0.0",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name":
+  {
+    "en": "Comments for flow",
+    "nl": "Notities voor flow",
+    "de": "Kommentare für Flow",
+    "fr": "Commentaires pour le flux",
+    "it": "Commenti per flusso",
+    "sv": "Kommentarer för flöde",
+    "no": "Kommentarer for flyt"
+  },
+  "description":
+  {
+    "en": "Simple cards to add comments to flows",
+    "nl": "Eenvoudige kaarten, voeg notities aan flows toe",
+    "de": "Einfache Karten zum Hinzufügen von kommentaren zu Flows",
+    "fr": "Cartes simples pour ajouter des commentaires aux flux",
+    "it": "Schede semplici per aggiungere commenti ai flussi",
+    "sv": "Enkla kort för att lägga till kommentarer till flöden",
+    "no": "Enkle kort for å legge kommentarer til strømmer"
+  },
+  "category":
+  [
+    "tools"
+  ],
+  "homeyCommunityTopicId":32251,
+  "tags":{
+    "en":[
+      "comment",
+      "annotate",
+      "note",
+      "explanation",
+      "explained"
+    ],
+    "nl": [
+      "commentaar",
+      "notitie",
+      "uitleg",
+      "aantekening"
+    ],
+    "de": [
+      "kommentar",
+      "hinweis",
+      "Erläuterung"
+    ],
+    "fr": [
+      "commentaire",
+      "remarque",
+      "explication"
+    ],
+    "it": [
+      "commenti",
+      "nota",
+      "spiegazione",
+      "chiarimenti"
+    ],
+    "sv": [
+      "kommentarer",
+      "notera",
+      "förklaring"
+    ],
+    "no": [
+      "kommentarer",
+      "merk",
+      "forklaring"
+    ]
+  },
+  "permissions": [],
+  "images":
+  {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author":
+  {
+    "name": "Fkey",
+    "email": ""
+  },
+  "contributors":{
+    "developers":[
+      {
+        "name":"Fkey",
+        "email":""
+      }
+    ],
+    "translators": [
+      {
+        "name": "google translate"
+      }
+    ]
+  },
+  "bugs":{
+    "url":"https://github.com/fkey3/comments-for-flow"},
+"brandColor":"#5c038f",
+  "flow":
+  {
+    "conditions":
+    [
+      {
+        "id":"condition_Comment",
+        "title":
+        {
+          "en": "Comment:",
+          "nl": "Notitie:",
+          "de": "Kommentar",
+          "fr": "Commentaire",
+          "it": "Commento",
+          "sv": "Kommentar",
+          "no": "Kommentar"
+        },
+        "args":
+        [
+          {
+            "name":"log",
+            "type":"text",
+            "placeholder":
+            {
+             "en": "Add a comment...",
+             "nl": "Voeg een notitie toe...",
+             "de": "Einen Kommentar hinfügen...",
+             "fr": "Ajouter un commentaire...",
+             "it": "Aggiungi un commento...",
+             "sv": "Lägg till en kommentar...",
+             "no": "Legg til en kommentar..."
+            }
+          }
+        ],
+        "hint":
+        {
+          "en": "This condition is always true. This card is not active. It only allows the user to add a comment",
+          "nl": "Deze conditie is altijd waar. Deze kaart is niet actief. Het geeft de gebruiker de mogelijkheid notities toe te voegen.",
+          "de": "Diese Bedingung ist immer erfüllt. Diese Karte ist nicht aktiv. Der Benutzer kann nur einen Kommentar hinzufügen.",
+          "fr": "Cette condition est toujours vraie. Cette carte n'est pas active. Elle permet uniquement à l'utilisateur d'ajouter un commentaire",
+          "it": "Questa condizione è sempre vera. Questa scheda non è attiva. Permette solo all'utente di aggiungere un commento",
+          "sv": "Detta villkor är alltid sant. Detta kort är inte aktivt. Det tillåter bara användaren att lägga till en kommentar",
+          "no": "Denne betingelsen er alltid sann. Dette kortet er ikke aktivt. Det tillater bare brukeren å legge til en kommentar"
+        }
+      },
+      {
+        "id":"condition_FixThis",
+        "title":
+        {
+          "en": "FixThis:",
+          "nl": "Oplossen:",
+          "de": "RepariereDies",
+          "fr": "Répareça",
+          "it": "AggiustaLo",
+          "sv": "FixaDetHär",
+          "no": "FiksDette"
+        },
+        "args":
+        [
+          {
+            "name":"log",
+            "type":"text",
+            "placeholder":
+            {
+             "en": "Add a to be fixed comment...",
+             "nl": "Voeg een nog oplossen notitie toe...",
+             "de": "Fügen Sie einen zu fixierenden Kommentar hinzu...",
+             "fr": "Ajouter un commentaire à corriger...",
+             "it": "Aggiungi un commento da correggere...",
+             "sv": "Lägg till en fast kommentar...",
+             "no": "Legg til en for å være fast kommentar..."
+            }
+          }
+        ],
+        "hint":
+        {
+          "en": "This condition card is always true. Its not active. It only allows the user to add a comment. Use the FixThis comment to add comment when you where you need to improve a flow. This special type makes it easy to find them",
+          "nl": "Deze conditie kaart is altijd waar. Deze is niet actief. Het geeft de gebruiker de mogelijkheid notities toe te voegen. Gebruik nog Oplossen om een notitie te maken in een flow die nog verbetering nodig heeft. De nog oplossen kaart maakt het makkelijker deze terug te vinden",
+          "de": "Diese Bedingungskarte ist immer wahr. Es ist nicht aktiv. Der Benutzer kann nur einen Kommentar hinzufügen. Verwenden Sie den RepariereDies-Kommentar, um einen Kommentar hinzuzufügen, wenn Sie einen Flow verbessern möchten. Dieser spezielle Typ macht es leicht, sie zu finden",
+          "fr": "Cette carte de condition est toujours vraie. Ce n'est pas actif. Il permet uniquement à l'utilisateur d'ajouter un commentaire. Utilisez le commentaire Répareça pour ajouter un commentaire lorsque vous avez besoin d'améliorer un flux. Ce type spécial permet de les trouver facilement",
+          "it": "Questa scheda condizione è sempre vera. Non è attivo. Consente solo all'utente di aggiungere un commento. Utilizzare il AggiustaLo commento per aggiungere un commento quando è necessario migliorare un flusso. Questo tipo speciale rende facile trovarli",
+          "sv": "Detta tillståndskort är alltid sant. Det är inte aktivt. Det låter användaren bara lägga till en kommentar. Använd FixaDetHär-kommentaren för att lägga till kommentar när du där du behöver förbättra ett flöde. Denna speciella typ gör det enkelt att hitta dem",
+          "no": "Dette betingelseskortet er alltid sant. Det er ikke aktivt. Det tillater bare brukeren å legge til en kommentar. Bruk FiksDette-kommentaren for å legge til kommentar når du der du trenger for å forbedre en flyt. Denne spesielle typen gjør det enkelt å finne dem"
+        }
+      }
+    ],
+    "actions":
+    [
+      {
+        "id":"action_Comment",
+        "title":
+        {
+          "en": "Comment:",
+          "nl": "Notitie:",
+          "de": "Kommentar",
+          "fr": "Commentaire",
+          "it": "Commento",
+          "sv": "Kommentar",
+          "no": "Kommentar"
+        },
+        "args":
+        [
+          {
+            "name":"log",
+            "type":"text",
+            "placeholder":
+            {
+              "en": "Add a comment...",
+              "nl": "Voeg een notitie toe...",
+              "de": "Einen Kommentar hinfügen...",
+              "fr": "Ajouter un commentaire...",
+              "it": "Aggiungi un commento...",
+              "sv": "Lägg till en kommentar...",
+              "no": "Legg til en kommentar..."
+            }
+          }
+        ],
+        "hint":
+        {
+          "en": "Add a comment to the flow",
+          "nl": "Voeg een notitie toe",
+          "de": "Kommentar",
+          "fr": "Commentaire",
+          "it": "Commento",
+          "sv": "Kommentar",
+          "no": "Kommentar"
+        }
+      },
+      {
+        "id":"action_FixThis",
+        "title":
+        {
+          "en": "FixThis:",
+          "nl": "Oplossen:",
+          "de": "RepariereDies",
+          "fr": "Répareça",
+          "it": "AggiustaLo",
+          "sv": "FixaDetHär",
+          "no": "FiksDette"
+        },
+        "args":
+        [
+          {
+            "name":"log",
+            "type":"text",
+            "placeholder":
+            {
+              "en": "Add a to be fixed comment...",
+              "nl": "Voeg een nog oplossen notitie toe...",
+              "de": "Fügen Sie einen zu fixierenden Kommentar hinzu...",
+              "fr": "Ajouter un commentaire à corriger...",
+              "it": "Aggiungi un commento da correggere...",
+              "sv": "Lägg till en fast kommentar...",
+              "no": "Legg til en for å være fast kommentar..."
+            }
+          }
+        ],
+        "hint":
+        {
+          "en":"This action card does not trigger an action. Its not active. It only allows the user to add a comment. Use the FixThis comment to add comment when you where you need to improve a flow. This special type makes it easy to find them",
+          "nl":"Deze actie kaart is geen actie. Deze is niet actief. Het geeft de gebruiker de mogelijkheid notities toe te voegen. Gebruik nog Oplossen om een notitie te maken in een flow die nog verbetering nodig heeft. De nog oplossen kaart maakt het makkelijker deze terug te vinden",
+          "de": "Diese Aktionskarte löst keine Aktion aus. Es ist nicht aktiv. Der Benutzer kann nur einen Kommentar hinzufügen. Verwenden Sie den FixThis-Kommentar, um einen Kommentar hinzuzufügen, wenn Sie einen Flow verbessern möchten. Dieser spezielle Typ macht es leicht, sie zu finden",
+          "fr": "Cette carte action ne déclenche aucune action. Ce n'est pas actif. Il permet uniquement à l'utilisateur d'ajouter un commentaire. Utilisez le commentaire FixThis pour ajouter un commentaire lorsque vous avez besoin d'améliorer un flux. Ce type spécial permet de les trouver facilement",
+          "it": "Questa carta azione non attiva un'azione. Non è attivo. Consente solo all'utente di aggiungere un commento. Utilizzare il Fix Questo commento per aggiungere un commento quando è necessario migliorare un flusso. Questo tipo speciale rende facile trovarli",
+          "sv": "Detta åtgärdskort utlöser inte en åtgärd. Det är inte aktivt. Det låter användaren bara lägga till en kommentar. Använd FixThis-kommentaren för att lägga till kommentar när du där du behöver förbättra ett flöde. Denna speciella typ gör det enkelt att hitta dem",
+          "no": "Dette handlingskortet utløser ikke en handling. Det er ikke aktivt. Det tillater bare brukeren å legge til en kommentar. Bruk FixThis-kommentaren for å legge til kommentar når du der du trenger for å forbedre en flyt. Denne spesielle typen gjør det enkelt å finne dem"
+        }
+      }
+    ]
+  }
+}
